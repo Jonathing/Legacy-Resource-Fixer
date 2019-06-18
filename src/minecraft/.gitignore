@@ -2,3 +2,5 @@
 
 !.gitignore
 !/me
+!LICENSE
+!README.md
