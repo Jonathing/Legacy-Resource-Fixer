@@ -31,7 +31,168 @@ public class ResourceFixer
 	
 	public static void newsound()
 	{
+		//ambient
 		
+		//cave
+		downloadResource("https://resources.download.minecraft.net/29/29d4dccf3353334c7aa2a49cb6fed3780a51a1ba", "/newsound/ambient/cave/cave1.ogg");
+		downloadResource("", "/newsound/ambient/cave/cave2.ogg");
+		downloadResource("", "/newsound/ambient/cave/cave3.ogg");
+		downloadResource("", "/newsound/ambient/cave/cave4.ogg");
+		downloadResource("", "/newsound/ambient/cave/cave5.ogg");
+		downloadResource("", "/newsound/ambient/cave/cave6.ogg");
+		downloadResource("", "/newsound/ambient/cave/cave7.ogg");
+		downloadResource("", "/newsound/ambient/cave/cave8.ogg");
+		downloadResource("", "/newsound/ambient/cave/cave9.ogg");
+		downloadResource("", "/newsound/ambient/cave/cave10.ogg");
+		downloadResource("", "/newsound/ambient/cave/cave11.ogg");
+		//END cave
+		
+		//weather ALL LOCAL
+		downloadResource("", "/newsound/ambient/weather/rain1.ogg");
+		downloadResource("", "/newsound/ambient/weather/rain2.ogg");
+		downloadResource("", "/newsound/ambient/weather/rain3.ogg");
+		downloadResource("", "/newsound/ambient/weather/rain4.ogg");
+		downloadResource("", "newsound/ambient/weather/thunder1.ogg");
+		downloadResource("", "newsound/ambient/weather/thunder2.ogg");
+		downloadResource("", "newsound/ambient/weather/thunder3.ogg");
+		//END weather
+		
+		//END ambient
+		
+		//damage
+		downloadResource("", "/newsound/damage/fallbig1.ogg");
+		downloadResource("", "/newsound/damage/fallbig2.ogg");
+		downloadResource("", "/newsound/damage/fallsmall.ogg");
+		downloadResource("", "/newsound/damage/fallflesh1.ogg");
+		downloadResource("", "/newsound/damage/fallflesh2.ogg");
+		downloadResource("", "/newsound/damage/fallflesh3.ogg");
+		//END damage
+		
+		//fire
+		downloadResource("", "/newsound/fire/fire.ogg");
+		downloadResource("", "/newsound/fire/ignite.ogg");
+		//END fire
+		
+		//liquid
+		downloadResource("", "/newsound/liquid/lava.ogg"); //LOCAL
+		downloadResource("", "/newsound/liquid/lavapop.ogg");
+		downloadResource("", "/newsound/liquid/splash.ogg"); //LOCAL
+		downloadResource("", "/newsound/liquid/water.ogg");
+		//END liquid
+		
+		//mob
+		
+		//blaze
+		downloadResource("", "/newsound/mob/blaze/breathe1.ogg");
+		downloadResource("", "/newsound/mob/blaze/breathe2.ogg");
+		downloadResource("", "/newsound/mob/blaze/breathe3.ogg");
+		downloadResource("", "/newsound/mob/blaze/breathe4.ogg");
+		downloadResource("", "/newsound/mob/blaze/death.ogg");
+		downloadResource("", "/newsound/mob/blaze/hit1.ogg");
+		downloadResource("", "/newsound/mob/blaze/hit2.ogg");
+		downloadResource("", "/newsound/mob/blaze/hit3.ogg");
+		downloadResource("", "/newsound/mob/blaze/hit4.ogg");
+		//END blaze
+		
+		//cat
+		downloadResource("", "/newsound/mob/cat/hiss1.ogg");
+		downloadResource("", "/newsound/mob/cat/hiss2.ogg");
+		downloadResource("", "/newsound/mob/cat/hiss3.ogg");
+		downloadResource("", "/newsound/mob/cat/hitt1.ogg");
+		downloadResource("", "/newsound/mob/cat/hitt2.ogg");
+		downloadResource("", "/newsound/mob/cat/hitt3.ogg");
+		downloadResource("", "/newsound/mob/cat/meow1.ogg");
+		downloadResource("", "/newsound/mob/cat/meow2.ogg");
+		downloadResource("", "/newsound/mob/cat/meow3.ogg");
+		downloadResource("", "/newsound/mob/cat/meow4.ogg");
+		downloadResource("", "/newsound/mob/cat/purr1.ogg");
+		downloadResource("", "/newsound/mob/cat/purr2.ogg");
+		downloadResource("", "/newsound/mob/cat/purr3.ogg");
+		downloadResource("", "/newsound/mob/cat/purreow1.ogg");
+		downloadResource("", "/newsound/mob/cat/purreow2.ogg");
+		//END cat
+		
+		//endermen
+		downloadResource("", "/newsound/mob/endermen/death.ogg");
+		downloadResource("", "/newsound/mob/endermen/hit1.ogg");
+		downloadResource("", "/newsound/mob/endermen/hit2.ogg");
+		downloadResource("", "/newsound/mob/endermen/hit3.ogg");
+		downloadResource("", "/newsound/mob/endermen/hit4.ogg");
+		downloadResource("", "/newsound/mob/endermen/idle1.ogg");
+		downloadResource("", "/newsound/mob/endermen/idle2.ogg");
+		downloadResource("", "/newsound/mob/endermen/idle3.ogg");
+		downloadResource("", "/newsound/mob/endermen/idle4.ogg");
+		downloadResource("", "/newsound/mob/endermen/idle5.ogg");
+		downloadResource("", "/newsound/mob/endermen/portal.ogg");
+		downloadResource("", "/newsound/mob/endermen/portal2.ogg");
+		downloadResource("", "/newsound/mob/endermen/scream1.ogg");
+		downloadResource("", "/newsound/mob/endermen/scream2.ogg");
+		downloadResource("", "/newsound/mob/endermen/scream3.ogg");
+		downloadResource("", "/newsound/mob/endermen/scream4.ogg");
+		downloadResource("", "/newsound/mob/endermen/stare.ogg");
+		//END endermen
+		
+		//ghast
+		downloadResource("", "/newsound/mob/ghast/affectionate scream.ogg");
+		downloadResource("", "/newsound/mob/ghast/charge.ogg");
+		downloadResource("", "/newsound/mob/ghast/death.ogg");
+		downloadResource("", "/newsound/mob/ghast/fireball4.ogg");
+		downloadResource("", "/newsound/mob/ghast/moan1.ogg");
+		downloadResource("", "/newsound/mob/ghast/moan2.ogg");
+		downloadResource("", "/newsound/mob/ghast/moan3.ogg");
+		downloadResource("", "/newsound/mob/ghast/moan4.ogg");
+		downloadResource("", "/newsound/mob/ghast/moan5.ogg");
+		downloadResource("", "/newsound/mob/ghast/moan6.ogg");
+		downloadResource("", "/newsound/mob/ghast/moan7.ogg");
+		downloadResource("", "/newsound/mob/ghast/scream1.ogg");
+		downloadResource("", "/newsound/mob/ghast/scream2.ogg");
+		downloadResource("", "/newsound/mob/ghast/scream3.ogg");
+		downloadResource("", "/newsound/mob/ghast/scream4.ogg");
+		downloadResource("", "/newsound/mob/ghast/scream5.ogg");
+		//END ghast
+		
+		//iron golem
+		downloadResource("", "/newsound/mob/irongolem/death.ogg");
+		downloadResource("", "/newsound/mob/irongolem/hit1.ogg");
+		downloadResource("", "/newsound/mob/irongolem/hit2.ogg");
+		downloadResource("", "/newsound/mob/irongolem/hit3.ogg");
+		downloadResource("", "/newsound/mob/irongolem/hit4.ogg");
+		downloadResource("", "/newsound/mob/irongolem/throw.ogg");
+		downloadResource("", "/newsound/mob/irongolem/walk1.ogg");
+		downloadResource("", "/newsound/mob/irongolem/walk2.ogg");
+		downloadResource("", "/newsound/mob/irongolem/walk3.ogg");
+		downloadResource("", "/newsound/mob/irongolem/walk4.ogg");
+		//END iron golem
+		
+		//magma cube
+		downloadResource("", "/newsound/mob/magmacube/big1.ogg");
+		downloadResource("", "/newsound/mob/magmacube/big2.ogg");
+		downloadResource("", "/newsound/mob/magmacube/big3.ogg");
+		downloadResource("", "/newsound/mob/magmacube/big4.ogg");
+		downloadResource("", "/newsound/mob/magmacube/jump1.ogg");
+		downloadResource("", "/newsound/mob/magmacube/jump2.ogg");
+		downloadResource("", "/newsound/mob/magmacube/jump3.ogg");
+		downloadResource("", "/newsound/mob/magmacube/jump4.ogg");
+		downloadResource("", "/newsound/mob/magmacube/small1.ogg");
+		downloadResource("", "/newsound/mob/magmacube/small2.ogg");
+		downloadResource("", "/newsound/mob/magmacube/small3.ogg");
+		downloadResource("", "/newsound/mob/magmacube/small4.ogg");
+		downloadResource("", "/newsound/mob/magmacube/small5.ogg");
+		//END magma cube
+		
+		//silverfish
+		downloadResource("", "/newsound/mob/silverfish/hit1.ogg");
+		downloadResource("", "/newsound/mob/silverfish/hit2.ogg");
+		downloadResource("", "/newsound/mob/silverfish/hit3.ogg");
+		downloadResource("", "/newsound/mob/silverfish/say1.ogg");
+		downloadResource("", "/newsound/mob/silverfish/say2.ogg");
+		downloadResource("", "/newsound/mob/silverfish/say3.ogg");
+		downloadResource("", "/newsound/mob/silverfish/say4.ogg");
+		downloadResource("", "/newsound/mob/silverfish/step1.ogg");
+		downloadResource("", "/newsound/mob/silverfish/step2.ogg");
+		downloadResource("", "/newsound/mob/silverfish/step3.ogg");
+		downloadResource("", "/newsound/mob/silverfish/step4.ogg");
+		//END silverfish
 	}
 	
 	public static void pe()
