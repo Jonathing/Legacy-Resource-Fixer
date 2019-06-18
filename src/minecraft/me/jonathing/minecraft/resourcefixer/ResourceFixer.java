@@ -197,22 +197,86 @@ public class ResourceFixer
 	
 	public static void pe()
 	{
-		
+		downloadResource("", "/pe/humble.png");
 	}
 	
 	public static void sound()
 	{
-		
+		//step
+		downloadResource("", "/sound/step/grass1.ogg");
+		downloadResource("", "/sound/step/grass2.ogg");
+		downloadResource("", "/sound/step/grass3.ogg");
+		downloadResource("", "/sound/step/grass4.ogg");
+		downloadResource("", "/sound/step/gravel1.ogg");
+		downloadResource("", "/sound/step/gravel2.ogg");
+		downloadResource("", "/sound/step/gravel3.ogg");
+		downloadResource("", "/sound/step/gravel4.ogg");
+		downloadResource("", "/sound/step/stone1.ogg");
+		downloadResource("", "/sound/step/stone2.ogg");
+		downloadResource("", "/sound/step/stone3.ogg");
+		downloadResource("", "/sound/step/stone4.ogg");
+		downloadResource("", "/sound/step/wood1.ogg");
+		downloadResource("", "/sound/step/wood2.ogg");
+		downloadResource("", "/sound/step/wood3.ogg");
+		downloadResource("", "/sound/step/wood4.ogg");
+		//END step
 	}
 	
-	public static void sound3()
+	public static void soundThree()
 	{
+		//ambient
 		
+		//cave
+		downloadResource("https://resources.download.minecraft.net/29/29d4dccf3353334c7aa2a49cb6fed3780a51a1ba", "/newsound/ambient/cave/cave1.ogg");
+		downloadResource("", "/newsound/ambient/cave/cave2.ogg");
+		downloadResource("", "/newsound/ambient/cave/cave3.ogg");
+		downloadResource("", "/newsound/ambient/cave/cave4.ogg");
+		downloadResource("", "/newsound/ambient/cave/cave5.ogg");
+		downloadResource("", "/newsound/ambient/cave/cave6.ogg");
+		downloadResource("", "/newsound/ambient/cave/cave7.ogg");
+		downloadResource("", "/newsound/ambient/cave/cave8.ogg");
+		downloadResource("", "/newsound/ambient/cave/cave9.ogg");
+		downloadResource("", "/newsound/ambient/cave/cave10.ogg");
+		downloadResource("", "/newsound/ambient/cave/cave11.ogg");
+		//END cave
+		
+		//weather ALL LOCAL
+		downloadResource("", "/newsound/ambient/weather/rain1.ogg");
+		downloadResource("", "/newsound/ambient/weather/rain2.ogg");
+		downloadResource("", "/newsound/ambient/weather/rain3.ogg");
+		downloadResource("", "/newsound/ambient/weather/rain4.ogg");
+		downloadResource("", "newsound/ambient/weather/thunder1.ogg");
+		downloadResource("", "newsound/ambient/weather/thunder2.ogg");
+		downloadResource("", "newsound/ambient/weather/thunder3.ogg");
+		//END weather
+		
+		//END ambient
+		
+		//damage
+		downloadResource("", "/newsound/damage/fallbig.ogg");
+		downloadResource("", "/newsound/damage/fallsmall.ogg");
+		downloadResource("", "/newsound/damage/hit1.ogg");
+		downloadResource("", "/newsound/damage/hit2.ogg");
+		downloadResource("", "/newsound/damage/hit3.ogg");
+		//END damage
 	}
 	
 	public static void streaming()
 	{
-		
+		downloadResource("", "/streaming/11.mus");
+		downloadResource("", "/streaming/13.mus");
+		downloadResource("", "/streaming/13.ogg");
+		downloadResource("", "/streaming/blocks.mus");
+		downloadResource("", "/streaming/cat.mus");
+		downloadResource("", "/streaming/cat.ogg");
+		downloadResource("", "/streaming/chirp.mus");
+		downloadResource("", "/streaming/far.mus");
+		downloadResource("", "/streaming/mall.mus");
+		downloadResource("", "/streaming/mellohi.mus");
+		downloadResource("", "/streaming/stal.mus");
+		downloadResource("", "/streaming/strad.mus");
+		downloadResource("", "/streaming/wait.mus");
+		downloadResource("", "/streaming/ward.mus");
 	}
 	
 	/**
