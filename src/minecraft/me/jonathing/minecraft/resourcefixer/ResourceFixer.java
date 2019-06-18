@@ -9,6 +9,12 @@ import java.net.URL;
 
 public class ResourceFixer
 {
+	public static void music()
+	{
+		downloadResource("https://resources.download.minecraft.net/50/50a59a4f56e4046701b758ddbb1c1587efa4cadf", "/music/calm1.ogg");
+		downloadResource("https://resources.download.minecraft.net/74/74da65c99aa578486efa7b69983d3533e14c0d6e", "/music/calm2.ogg");
+		downloadResource("https://resources.download.minecraft.net/14/14ae57a6bce3d4254daa8be2b098c2d99743cc3f", "/music/calm3.ogg");
+	}
 	
 	/**
 	 * Method used to download a file using Java I/O library.
