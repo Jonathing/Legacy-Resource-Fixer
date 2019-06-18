@@ -22,6 +22,9 @@ public class ResourceFixerInit
 		ModConstants.LOG.warn("Resources directory is " + ModConstants.resourcesDir);
 		
 		// Download resources
+		ResourceFixer.downloadResource("https://resources.download.minecraft.net/50/50a59a4f56e4046701b758ddbb1c1587efa4cadf", "/music/calm1.ogg");
+		ModConstants.LOG.error("BREAKPOINT!!!");
+		ModConstants.LOG.error("BREAKPOINT!!!");
 	}
 	
 	/*
