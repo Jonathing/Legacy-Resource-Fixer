@@ -32,6 +32,11 @@ public class ResourceFixer
 	    	  }
 	    	  newFile.createNewFile();
 	      }
+	      else
+	      {
+	    	  ModConstants.LOG.warn("file " + newFile.toString() + " already exists.");
+	    	  return;
+	      }
 	      URL urlObj = new URL(url);
 	      bufferedIS = new BufferedInputStream(urlObj.openStream());
 	      fileOS = new FileOutputStream(filePath);
