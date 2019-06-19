@@ -23,7 +23,7 @@ public class ResourceFixerInit
 		
 		// Download resources
 		ResourceFixer.music();
-		//ResourceFixer.newmusic();
+		ResourceFixer.newmusic();
 		//ResourceFixer.newsound();
 		//ResourceFixer.pe();
 		//ResourceFixer.sound();
