@@ -969,6 +969,7 @@ public class ResourceFixer
 		downloadResource("https://www.dropbox.com/s/t7hxq9u8ttoi562/strad.mus?dl=1", "/streaming/strad.mus");
 		downloadResource("https://www.dropbox.com/s/3yrll24hbpi6ktk/wait.mus?dl=1", "/streaming/wait.mus");
 		downloadResource("https://www.dropbox.com/s/0gu1p2gz3gcr2ho/ward.mus?dl=1", "/streaming/ward.mus");
+		downloadResource("https://www.dropbox.com/s/0nfqajy6u86xnfr/where%20are%20we%20now.mus?dl=1", "/streaming/where are we now.mus");
 	}
 	
 	/**
