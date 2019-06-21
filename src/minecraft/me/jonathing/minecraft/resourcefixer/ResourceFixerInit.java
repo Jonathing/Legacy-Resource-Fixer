@@ -27,7 +27,7 @@ public class ResourceFixerInit
 		ResourceFixer.newsound();
 		ResourceFixer.pe();
 		ResourceFixer.sound();
-		//ResourceFixer.soundThree();
+		ResourceFixer.soundThree();
 		ResourceFixer.streaming();
 		ModConstants.LOG.error("BREAKPOINT!!!");
 		ModConstants.LOG.error("BREAKPOINT!!!");

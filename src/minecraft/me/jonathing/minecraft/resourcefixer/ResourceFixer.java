@@ -700,10 +700,10 @@ public class ResourceFixer
 		downloadResource("https://resources.download.minecraft.net/d1/d1ad2cbe6584d9cd9483483f8655966d25a251a0", "/sound3/mob/skeleton/hurt2.ogg");
 		downloadResource("https://resources.download.minecraft.net/ac/acffab0bafe2c82ffc8723880aab5ec1682d4329", "/sound3/mob/skeleton/hurt3.ogg");
 		downloadResource("https://resources.download.minecraft.net/a8/a88e0436e38512171a3ef819249c3d1a2650540f", "/sound3/mob/skeleton/hurt4.ogg");
-		downloadResource("", "/sound3/mob/skeleton/step1.ogg");
-		downloadResource("", "/sound3/mob/skeleton/step2.ogg");
-		downloadResource("", "/sound3/mob/skeleton/step3.ogg");
-		downloadResource("", "/sound3/mob/skeleton/step4.ogg");
+		downloadResource("https://resources.download.minecraft.net/68/68e0a58848bbdad12ad2b216d7244754459c9516", "/sound3/mob/skeleton/step1.ogg");
+		downloadResource("https://resources.download.minecraft.net/46/4609ec723b4e724f44c653b82de40ec159d2eea1", "/sound3/mob/skeleton/step2.ogg");
+		downloadResource("https://resources.download.minecraft.net/00/000c82756fd54e40cb236199f2b479629d0aca2f", "/sound3/mob/skeleton/step3.ogg");
+		downloadResource("https://resources.download.minecraft.net/a8/a89bdd809baa83cacd329f0219bca1f612ccda5a", "/sound3/mob/skeleton/step4.ogg");
 		//END skeleton
 		
 		//slime
@@ -714,10 +714,10 @@ public class ResourceFixer
 		downloadResource("https://resources.download.minecraft.net/35/35f0b3c9c462a6c21ec213fbda2437a0e6427883", "/sound3/mob/slime/small5.ogg");
 		downloadResource("https://resources.download.minecraft.net/07/075e1ea92d5564d7bdf267ae975044315a41a686", "/sound3/mob/slime/attack1.ogg");
 		downloadResource("https://resources.download.minecraft.net/f6/f6e2067571631aae206000a501c9adebe862e32a", "/sound3/mob/slime/attack2.ogg");
-		downloadResource("", "/sound3/mob/slime/big1.ogg");
-		downloadResource("", "/sound3/mob/slime/big2.ogg");
-		downloadResource("", "/sound3/mob/slime/big3.ogg");
-		downloadResource("", "/sound3/mob/slime/big4.ogg");
+		downloadResource("https://resources.download.minecraft.net/b5/b5eca1979e69271b2065ac67ba2c37b5afac0f98", "/sound3/mob/slime/big1.ogg");
+		downloadResource("https://resources.download.minecraft.net/00/00e06362a31ad7094e452c5bcea837b061825cb0", "/sound3/mob/slime/big2.ogg");
+		downloadResource("https://resources.download.minecraft.net/2c/2c20816632caecf75f00bb968f51847e3a982e75", "/sound3/mob/slime/big3.ogg");
+		downloadResource("https://resources.download.minecraft.net/c9/c906c18d26550ae15c75e23f2c5066e4fc678c89", "/sound3/mob/slime/big4.ogg");
 		//END slime
 		
 		//spider
@@ -726,24 +726,24 @@ public class ResourceFixer
 		downloadResource("https://resources.download.minecraft.net/f9/f9f79162efa6667b753c1fbb46ff9888e8ce5f32", "/sound3/mob/spider/say3.ogg");
 		downloadResource("https://resources.download.minecraft.net/3c/3cf3e8d3aab0a3092f6c6bf681ff156bc9653859", "/sound3/mob/spider/say4.ogg");
 		downloadResource("https://resources.download.minecraft.net/4c/4c69a6edc25d973999aa0db2bb46b583a31da278", "/sound3/mob/spider/death.ogg");
-		downloadResource("", "/sound3/mob/spider/step1.ogg");
-		downloadResource("", "/sound3/mob/spider/step2.ogg");
-		downloadResource("", "/sound3/mob/spider/step3.ogg");
-		downloadResource("", "/sound3/mob/spider/step4.ogg");
+		downloadResource("https://resources.download.minecraft.net/8f/8f7ff84e460ca507f654168f1d24e82637517940", "/sound3/mob/spider/step1.ogg");
+		downloadResource("https://resources.download.minecraft.net/a8/a8eb0b1ce4abb53334ab75be82dc465135c4a27a", "/sound3/mob/spider/step2.ogg");
+		downloadResource("https://resources.download.minecraft.net/ef/efa5acfa08b210ba3087b535c40549c0ed8916f0", "/sound3/mob/spider/step3.ogg");
+		downloadResource("https://resources.download.minecraft.net/7d/7d801582e08be973d1a41469d1b92916278d1e88", "/sound3/mob/spider/step4.ogg");
 		//END spider
 		
 		//wither
-		downloadResource("", "/sound3/mob/wither/death.ogg");
-		downloadResource("", "/sound3/mob/wither/hurt1.ogg");
-		downloadResource("", "/sound3/mob/wither/hurt2.ogg");
-		downloadResource("", "/sound3/mob/wither/hurt3.ogg");
-		downloadResource("", "/sound3/mob/wither/hurt4.ogg");
-		downloadResource("", "/sound3/mob/wither/idle1.ogg");
-		downloadResource("", "/sound3/mob/wither/idle2.ogg");
-		downloadResource("", "/sound3/mob/wither/idle3.ogg");
-		downloadResource("", "/sound3/mob/wither/idle4.ogg");
-		downloadResource("", "/sound3/mob/wither/shoot.ogg");
-		downloadResource("", "/sound3/mob/wither/spawn.ogg");
+		downloadResource("https://resources.download.minecraft.net/ae/ae27c6817985a9acb0a0fdefab89ff5d82dbe009", "/sound3/mob/wither/death.ogg");
+		downloadResource("https://resources.download.minecraft.net/55/550da80d936e05a7bfda43ca5d8af5b3779320f1", "/sound3/mob/wither/hurt1.ogg");
+		downloadResource("https://resources.download.minecraft.net/80/8072827813f0bffb9847e636245edebb5ddab198", "/sound3/mob/wither/hurt2.ogg");
+		downloadResource("https://resources.download.minecraft.net/a4/a4cf4ebe4c475cd6a4852d6b4228a4b64cf5cb00", "/sound3/mob/wither/hurt3.ogg");
+		downloadResource("https://resources.download.minecraft.net/72/72a006be3bd693aa23cc2f8e9c9d13ea6f829aa1", "/sound3/mob/wither/hurt4.ogg");
+		downloadResource("https://resources.download.minecraft.net/22/22ed26394cb6f6b5eeb2ceb54fb50608798d19e8", "/sound3/mob/wither/idle1.ogg");
+		downloadResource("https://resources.download.minecraft.net/6b/6b2f86a35a3cd88320b55c029d77659915f83239", "/sound3/mob/wither/idle2.ogg");
+		downloadResource("https://resources.download.minecraft.net/79/79afbeabcdbb063cfa00d544dc00beac8543a581", "/sound3/mob/wither/idle3.ogg");
+		downloadResource("https://resources.download.minecraft.net/e3/e3f90fb5afaf84475dd31dca6f65378a455d17f7", "/sound3/mob/wither/idle4.ogg");
+		downloadResource("https://resources.download.minecraft.net/78/78ee5b46b6615191b7a16d259fcbda273762297e", "/sound3/mob/wither/shoot.ogg");
+		downloadResource("https://resources.download.minecraft.net/d8/d8caaead680c20a4f51361587aeddd57a3357a72", "/sound3/mob/wither/spawn.ogg");
 		//END wither
 		
 		//wolf
@@ -762,11 +762,11 @@ public class ResourceFixer
 		downloadResource("https://resources.download.minecraft.net/c2/c2e4001d9ae8fc1f066a914170faad4c45a84e1e", "/sound3/mob/wolf/panting.ogg");
 		downloadResource("https://resources.download.minecraft.net/3d/3d95ea49e91b4295859b193bb41b009b92250a44", "/sound3/mob/wolf/shake.ogg");
 		downloadResource("https://resources.download.minecraft.net/fc/fcf4f90c452b7b511d50e3959ae05036d13a7cf8", "/sound3/mob/wolf/whine.ogg");
-		downloadResource("", "/sound3/mob/wolf/step1.ogg");
-		downloadResource("", "/sound3/mob/wolf/step2.ogg");
-		downloadResource("", "/sound3/mob/wolf/step3.ogg");
-		downloadResource("", "/sound3/mob/wolf/step4.ogg");
-		downloadResource("", "/sound3/mob/wolf/step5.ogg");
+		downloadResource("https://resources.download.minecraft.net/b6/b6a62224be809aa0c0747bee94499f0ee51ca2b6", "/sound3/mob/wolf/step1.ogg");
+		downloadResource("https://resources.download.minecraft.net/4b/4ba55627b6b9ce64b4a48a00c990d5855b6064cf", "/sound3/mob/wolf/step2.ogg");
+		downloadResource("https://resources.download.minecraft.net/30/30e920526eb5855065b873e30d17b4d85bfbe570", "/sound3/mob/wolf/step3.ogg");
+		downloadResource("https://resources.download.minecraft.net/d7/d7d5be6092d00c2f7f68bdcbf10ea3ac3cfea30c", "/sound3/mob/wolf/step4.ogg");
+		downloadResource("https://resources.download.minecraft.net/36/3610feb2a1a575026cfa3ab44965d114e74ea583", "/sound3/mob/wolf/step5.ogg");
 		//END wolf
 		
 		//zombie
@@ -784,14 +784,14 @@ public class ResourceFixer
 		downloadResource("https://resources.download.minecraft.net/6e/6e0488ab07b9539fbaebc093f194bb6a95b2caec", "/sound3/mob/zombie/death.ogg");
 		downloadResource("https://resources.download.minecraft.net/f3/f35e14af35d1d12244dac9e655f4e31d4ef84e1b", "/sound3/mob/zombie/hurt1.ogg");
 		downloadResource("https://resources.download.minecraft.net/bc/bc85d96a99e84a234cbe23841f87e84e71198be3", "/sound3/mob/zombie/hurt2.ogg");
-		downloadResource("", "/sound3/mob/zombie/infect.ogg");
-		downloadResource("", "/sound3/mob/zombie/remedy.ogg");
-		downloadResource("", "/sound3/mob/zombie/unfect.ogg");
-		downloadResource("", "/sound3/mob/zombie/step1.ogg");
-		downloadResource("", "/sound3/mob/zombie/step2.ogg");
-		downloadResource("", "/sound3/mob/zombie/step3.ogg");
-		downloadResource("", "/sound3/mob/zombie/step4.ogg");
-		downloadResource("", "/sound3/mob/zombie/step5.ogg");
+		downloadResource("https://resources.download.minecraft.net/c1/c18fb5eacf0fdb33c05eb806bc41332cccee43d8", "/sound3/mob/zombie/infect.ogg");
+		downloadResource("https://resources.download.minecraft.net/8e/8ed3945df8b9264c6451c153357475482d9f2066", "/sound3/mob/zombie/remedy.ogg");
+		downloadResource("https://resources.download.minecraft.net/40/403c56cd190fb7587a26bcd1b7d2abac598c3ec0", "/sound3/mob/zombie/unfect.ogg");
+		downloadResource("https://resources.download.minecraft.net/96/9680c9dcd637ddea8e10a0d73705aa155d04a132", "/sound3/mob/zombie/step1.ogg");
+		downloadResource("https://resources.download.minecraft.net/e8/e8dcca0e494a3f479f58f581c9a8e297cc92f4e7", "/sound3/mob/zombie/step2.ogg");
+		downloadResource("https://resources.download.minecraft.net/33/33acf13c25f65a432348e9476eda67d6a34831e3", "/sound3/mob/zombie/step3.ogg");
+		downloadResource("https://resources.download.minecraft.net/69/69b6e589ec3d2c9063972545e83ed1f07e665094", "/sound3/mob/zombie/step4.ogg");
+		downloadResource("https://resources.download.minecraft.net/b8/b88bd8618c05232a7287799ea9246ae12f5da9d5", "/sound3/mob/zombie/step5.ogg");
 		//END zombie
 		
 		//zombiepig
@@ -827,9 +827,9 @@ public class ResourceFixer
 		//END portal
 		
 		//random
-		downloadResource("", "/sound3/random/anvil_break.ogg");
-		downloadResource("", "/sound3/random/anvil_land.ogg");
-		downloadResource("", "/sound3/random/anvil_use.ogg");
+		downloadResource("https://resources.download.minecraft.net/70/705a155201cc388a0c0c6f7435ddbc0fcc56b5f2", "/sound3/random/anvil_break.ogg");
+		downloadResource("https://resources.download.minecraft.net/93/934b16e82b94d5790175615303594f0ec28da4a0", "/sound3/random/anvil_land.ogg");
+		downloadResource("https://resources.download.minecraft.net/88/88a792430dfff97582ab49b8dc9477cd9d4e5ebb", "/sound3/random/anvil_use.ogg");
 		downloadResource("https://resources.download.minecraft.net/87/87edc11141fb5a045f2ed830b545aaa73f96ee99", "/sound3/random/bow.ogg");
 		downloadResource("https://resources.download.minecraft.net/78/78f034d58779fb4d22b00ea249015a0dbf4e7b3f", "/sound3/random/bowhit1.ogg");
 		downloadResource("https://resources.download.minecraft.net/c3/c3cd0db760c980287b26ef9c0894f66c4250724e", "/sound3/random/bowhit2.ogg");
@@ -861,7 +861,7 @@ public class ResourceFixer
 		downloadResource("https://resources.download.minecraft.net/e9/e9833a1512b57bcf88ac4fdcc8df4e5a7e9d701d", "/sound3/random/orb.ogg");
 		downloadResource("https://resources.download.minecraft.net/8f/8f45b5faf6dfae2065846d26612f7552b73640dd", "/sound3/random/pop.ogg");
 		downloadResource("https://resources.download.minecraft.net/22/22a491f266f5c3cdd6e669a9493daaf40c9c8575", "/sound3/random/splash.ogg");
-		downloadResource("", "/sound3/random/successful_hit.ogg");
+		downloadResource("https://resources.download.minecraft.net/e9/e9833a1512b57bcf88ac4fdcc8df4e5a7e9d701d", "/sound3/random/successful_hit.ogg");
 		downloadResource("https://resources.download.minecraft.net/b2/b210a3c371441b77fe873133b2cb7b63e367b2f3", "/sound3/random/wood_click.ogg");
 		//END random
 		
@@ -870,42 +870,42 @@ public class ResourceFixer
 		downloadResource("https://resources.download.minecraft.net/56/56c1d0ac0de2265018b2c41cb571cc6631101484", "/sound3/step/cloth2.ogg");
 		downloadResource("https://resources.download.minecraft.net/9c/9c63f2a3681832dc32d206f6830360bfe94b5bfc", "/sound3/step/cloth3.ogg");
 		downloadResource("https://resources.download.minecraft.net/55/55da1856e77cfd31a7e8c3d358e1f856c5583198", "/sound3/step/cloth4.ogg");
-		downloadResource("", "/sound3/step/grass1.ogg");
-		downloadResource("", "/sound3/step/grass2.ogg");
-		downloadResource("", "/sound3/step/grass3.ogg");
-		downloadResource("", "/sound3/step/grass4.ogg");
-		downloadResource("", "/sound3/step/grass5.ogg");
-		downloadResource("", "/sound3/step/grass6.ogg");
-		downloadResource("", "/sound3/step/gravel1.ogg");
-		downloadResource("", "/sound3/step/gravel2.ogg");
-		downloadResource("", "/sound3/step/gravel3.ogg");
-		downloadResource("", "/sound3/step/gravel4.ogg");
-		downloadResource("", "/sound3/step/ladder1.ogg");
-		downloadResource("", "/sound3/step/ladder2.ogg");
-		downloadResource("", "/sound3/step/ladder3.ogg");
-		downloadResource("", "/sound3/step/ladder4.ogg");
-		downloadResource("", "/sound3/step/ladder5.ogg");
-		downloadResource("", "/sound3/step/sand1.ogg");
-		downloadResource("", "/sound3/step/sand2.ogg");
-		downloadResource("", "/sound3/step/sand3.ogg");
-		downloadResource("", "/sound3/step/sand4.ogg");
-		downloadResource("", "/sound3/step/sand5.ogg");
+		downloadResource("https://resources.download.minecraft.net/22/227ab99bf7c6cf0b2002e0f7957d0ff7e5cb0c96", "/sound3/step/grass1.ogg");
+		downloadResource("https://resources.download.minecraft.net/5c/5c971029d9284676dce1dda2c9d202f8c47163b2", "/sound3/step/grass2.ogg");
+		downloadResource("https://resources.download.minecraft.net/76/76de0a736928eac5003691d73bdc2eda92116198", "/sound3/step/grass3.ogg");
+		downloadResource("https://resources.download.minecraft.net/bc/bc28801224a0aa77fdc93bb7c6c94beacdf77331", "/sound3/step/grass4.ogg");
+		downloadResource("https://resources.download.minecraft.net/81/813ebd91b9c3fe1ac8f89f13c85d0755678f2165", "/sound3/step/grass5.ogg");
+		downloadResource("https://resources.download.minecraft.net/b8/b88cafe403394cdcd4de0e3aeb7b76f24170c6fe", "/sound3/step/grass6.ogg");
+		downloadResource("https://resources.download.minecraft.net/1d/1d761cb3bcb45498719e4fba0751e1630e134f1a", "/sound3/step/gravel1.ogg");
+		downloadResource("https://resources.download.minecraft.net/ac/ac7a7c8d106e26abc775b1b46150c083825d8ddc", "/sound3/step/gravel2.ogg");
+		downloadResource("https://resources.download.minecraft.net/c1/c109b985a7e6d5d3828c92e00aefa49deca0eb8c", "/sound3/step/gravel3.ogg");
+		downloadResource("https://resources.download.minecraft.net/a4/a47adece748059294c5f563c0fcac02fa0e4bab4", "/sound3/step/gravel4.ogg");
+		downloadResource("https://resources.download.minecraft.net/d6/d6212a1d5feb88d76b9a83ce5a27ab4e6d4c20bb", "/sound3/step/ladder1.ogg");
+		downloadResource("https://resources.download.minecraft.net/fd/fd446ad40d24edfe4fb789a6065276e164ea4b61", "/sound3/step/ladder2.ogg");
+		downloadResource("https://resources.download.minecraft.net/3f/3fee58d7b2c99ddbce962618176637574ae8d67b", "/sound3/step/ladder3.ogg");
+		downloadResource("https://resources.download.minecraft.net/f7/f78ede81160002fc0561218c7ecd97e91cccab7c", "/sound3/step/ladder4.ogg");
+		downloadResource("https://resources.download.minecraft.net/e9/e9a1caaddcde79cdac7aa8eabde50d4cfd1bc578", "/sound3/step/ladder5.ogg");
+		downloadResource("https://resources.download.minecraft.net/98/9813c8185197f4a4296649f27a9d738c4a6dfc78", "/sound3/step/sand1.ogg");
+		downloadResource("https://resources.download.minecraft.net/bd/bd1750c016f6bab40934eff0b0fb64c41c86e44b", "/sound3/step/sand2.ogg");
+		downloadResource("https://resources.download.minecraft.net/ab/ab07279288fa49215bada5c17627e6a54ad0437c", "/sound3/step/sand3.ogg");
+		downloadResource("https://resources.download.minecraft.net/a4/a474236fb0c75bd65a6010e87dbc000d345fc185", "/sound3/step/sand4.ogg");
+		downloadResource("https://resources.download.minecraft.net/9f/9fd6d2c633d276b952f2ff2aaa1fa7e5fb5efd2a", "/sound3/step/sand5.ogg");
 		downloadResource("https://resources.download.minecraft.net/e9/e9bab7d3d15541f0aaa93fad31ad37fd07e03a6c", "/sound3/step/snow1.ogg");
 		downloadResource("https://resources.download.minecraft.net/58/5887d10234c4f244ec5468080412f3e6ef9522f3", "/sound3/step/snow2.ogg");
 		downloadResource("https://resources.download.minecraft.net/a4/a4bc069321a96236fde04a3820664cc23b2ea619", "/sound3/step/snow3.ogg");
 		downloadResource("https://resources.download.minecraft.net/e2/e26fa3036cdab4c2264ceb19e1cd197a2a510227", "/sound3/step/snow4.ogg");
-		downloadResource("", "/sound3/step/stone1.ogg");
-		downloadResource("", "/sound3/step/stone2.ogg");
-		downloadResource("", "/sound3/step/stone3.ogg");
-		downloadResource("", "/sound3/step/stone4.ogg");
-		downloadResource("", "/sound3/step/stone5.ogg");
-		downloadResource("", "/sound3/step/stone6.ogg");
-		downloadResource("", "/sound3/step/wood1.ogg");
-		downloadResource("", "/sound3/step/wood2.ogg");
-		downloadResource("", "/sound3/step/wood3.ogg");
-		downloadResource("", "/sound3/step/wood4.ogg");
-		downloadResource("", "/sound3/step/wood5.ogg");
-		downloadResource("", "/sound3/step/wood6.ogg");
+		downloadResource("https://resources.download.minecraft.net/4a/4a2e3795ffd4d3aab0834b7e41903af3a8f7d197", "/sound3/step/stone1.ogg");
+		downloadResource("https://resources.download.minecraft.net/22/22a383d9c22342305a4f16fec0bb479a885f8da2", "/sound3/step/stone2.ogg");
+		downloadResource("https://resources.download.minecraft.net/a5/a533e7ae975e62592de868e0d0572778614bd587", "/sound3/step/stone3.ogg");
+		downloadResource("https://resources.download.minecraft.net/d5/d5218034051a13322d7b5efc0b5a9af739615f04", "/sound3/step/stone4.ogg");
+		downloadResource("https://resources.download.minecraft.net/48/48dd05ab2e4626d74206c2b09a628a3d59ce15e9", "/sound3/step/stone5.ogg");
+		downloadResource("https://resources.download.minecraft.net/c4/c4810a3de80cb57f9cdf8deaacfd36cb619cdf0b", "/sound3/step/stone6.ogg");
+		downloadResource("https://resources.download.minecraft.net/af/afb01196e2179e3b15b48f3373cea4c155d56b84", "/sound3/step/wood1.ogg");
+		downloadResource("https://resources.download.minecraft.net/1e/1e82a43c30cf8fcbe05d0bc2760ecba5d2320314", "/sound3/step/wood2.ogg");
+		downloadResource("https://resources.download.minecraft.net/27/27722125968ac60c0f191a961b17e406f1351c6e", "/sound3/step/wood3.ogg");
+		downloadResource("https://resources.download.minecraft.net/29/29586f60bfe6f521dbc748919d4f0dc5b28beefd", "/sound3/step/wood4.ogg");
+		downloadResource("https://resources.download.minecraft.net/85/85ff970401cb1ef2e812f943077ab96549315d0a", "/sound3/step/wood5.ogg");
+		downloadResource("https://resources.download.minecraft.net/94/944bc8b8e1e135340dc4afc6d3416a01222674a1", "/sound3/step/wood6.ogg");
 		//END step
 		
 		//tile
