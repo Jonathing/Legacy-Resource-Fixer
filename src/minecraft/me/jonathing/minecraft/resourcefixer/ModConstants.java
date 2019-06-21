@@ -12,7 +12,7 @@ public class ModConstants
 	public static final String NAME = "Legacy Resource Fixer";
 	//public static final String devVersion = "";
     public static final String majorVersion = "1";
-    public static final String minorVersion = "0";
+    public static final String minorVersion = "1";
     public static final String patchVersion = "0";
     public static final String VERSION_ID = /*devVersion + */majorVersion + "." + minorVersion + "." + patchVersion;
     public static final String MODID = "resourcefixer";
