@@ -9,6 +9,8 @@ import java.net.URL;
 
 public class ResourceFixer
 {
+	private static String dlSource;
+	
 	public static void music()
 	{
 		downloadResource("https://resources.download.minecraft.net/50/50a59a4f56e4046701b758ddbb1c1587efa4cadf", "/music/calm1.ogg");
@@ -237,7 +239,7 @@ public class ResourceFixer
 		downloadResource("https://resources.download.minecraft.net/c7/c76dea473821e2ae9a1f006a4eddfdd0703eecdf", "/newsound/mob/zombiepig/zpigangry4.ogg");
 		downloadResource("https://resources.download.minecraft.net/40/40b8e244d03ae17483edd4571bd851e10a97050f", "/newsound/mob/zombiepig/zpigdeath.ogg");
 		downloadResource("https://resources.download.minecraft.net/a2/a2cfbea288280419ec0c8fb75d8ee5395536ac02", "/newsound/mob/zombiepig/zpighurt1.ogg");
-		downloadResource("https://resources.download.minecraft.net/d1/d1917b9be91d60a40dd0bf804580c1f494e9ae6d", "/newsound/mob/zombiepig/zpighurt1.ogg");
+		downloadResource("https://resources.download.minecraft.net/d1/d1917b9be91d60a40dd0bf804580c1f494e9ae6d", "/newsound/mob/zombiepig/zpighurt2.ogg");
 		//END zombiepig
 		
 		downloadResource("https://resources.download.minecraft.net/74/74e5422bd83bb2041a6f0d09644bc095c0e9e21a", "/newsound/mob/chicken1.ogg");
@@ -334,7 +336,7 @@ public class ResourceFixer
 		downloadResource("https://resources.download.minecraft.net/a9/a94a69e56568f5789cab05382cfd81f601189fd1", "/newsound/random/explode3.ogg");
 		downloadResource("https://resources.download.minecraft.net/f2/f259be40364341edcaf88e339bc24ab01e49845a", "/newsound/random/explode4.ogg");
 		downloadResource("https://resources.download.minecraft.net/c6/c649e60ea9a99c97501a50d2dc4e579343e91ea8", "/newsound/random/fizz.ogg");
-		downloadResource("https://resources.download.minecraft.net/a9/a92ba2b8f6abc41aa8d679ad808a81d0aafa04b2", "/newsound/random/fuze.ogg");
+		downloadResource("https://resources.download.minecraft.net/a9/a92ba2b8f6abc41aa8d679ad808a81d0aafa04b2", "/newsound/random/fuse.ogg");
 		downloadResource("https://resources.download.minecraft.net/72/7274a2231ed4544a37e599b7b014e589e5377094", "/newsound/random/glass1.ogg");
 		downloadResource("https://resources.download.minecraft.net/87/87c47bda3645c68f18a49e83cbf06e5302d087ff", "/newsound/random/glass2.ogg");
 		downloadResource("https://resources.download.minecraft.net/ad/ad7d770b7fff3b64121f75bd60cecfc4866d1cd6", "/newsound/random/glass3.ogg");
@@ -344,7 +346,7 @@ public class ResourceFixer
 		downloadResource("https://resources.download.minecraft.net/e9/e9833a1512b57bcf88ac4fdcc8df4e5a7e9d701d", "/newsound/random/orb.ogg");
 		downloadResource("https://resources.download.minecraft.net/8f/8f45b5faf6dfae2065846d26612f7552b73640dd", "/newsound/random/pop.ogg");
 		downloadResource("https://resources.download.minecraft.net/22/22a491f266f5c3cdd6e669a9493daaf40c9c8575", "/newsound/random/splash.ogg");
-		downloadResource("https://resources.download.minecraft.net/b2/b210a3c371441b77fe873133b2cb7b63e367b2f3", "/newsound/random/wood_click.ogg");
+		downloadResource("https://resources.download.minecraft.net/b2/b210a3c371441b77fe873133b2cb7b63e367b2f3", "/newsound/random/wood click.ogg");
 		//END random
 		
 		//step
@@ -836,7 +838,7 @@ public class ResourceFixer
 		downloadResource("https://resources.download.minecraft.net/c7/c76dea473821e2ae9a1f006a4eddfdd0703eecdf", "/sound3/mob/zombiepig/zpigangry4.ogg");
 		downloadResource("https://resources.download.minecraft.net/40/40b8e244d03ae17483edd4571bd851e10a97050f", "/sound3/mob/zombiepig/zpigdeath.ogg");
 		downloadResource("https://resources.download.minecraft.net/a2/a2cfbea288280419ec0c8fb75d8ee5395536ac02", "/sound3/mob/zombiepig/zpighurt1.ogg");
-		downloadResource("https://resources.download.minecraft.net/d1/d1917b9be91d60a40dd0bf804580c1f494e9ae6d", "/sound3/mob/zombiepig/zpighurt1.ogg");
+		downloadResource("https://resources.download.minecraft.net/d1/d1917b9be91d60a40dd0bf804580c1f494e9ae6d", "/sound3/mob/zombiepig/zpighurt2.ogg");
 		//END zombiepig
 		
 		//END mob
@@ -884,7 +886,7 @@ public class ResourceFixer
 		downloadResource("https://resources.download.minecraft.net/a9/a94a69e56568f5789cab05382cfd81f601189fd1", "/sound3/random/explode3.ogg");
 		downloadResource("https://resources.download.minecraft.net/f2/f259be40364341edcaf88e339bc24ab01e49845a", "/sound3/random/explode4.ogg");
 		downloadResource("https://resources.download.minecraft.net/c6/c649e60ea9a99c97501a50d2dc4e579343e91ea8", "/sound3/random/fizz.ogg");
-		downloadResource("https://resources.download.minecraft.net/a9/a92ba2b8f6abc41aa8d679ad808a81d0aafa04b2", "/sound3/random/fuze.ogg");
+		downloadResource("https://resources.download.minecraft.net/a9/a92ba2b8f6abc41aa8d679ad808a81d0aafa04b2", "/sound3/random/fuse.ogg");
 		downloadResource("https://resources.download.minecraft.net/72/7274a2231ed4544a37e599b7b014e589e5377094", "/sound3/random/glass1.ogg");
 		downloadResource("https://resources.download.minecraft.net/87/87c47bda3645c68f18a49e83cbf06e5302d087ff", "/sound3/random/glass2.ogg");
 		downloadResource("https://resources.download.minecraft.net/ad/ad7d770b7fff3b64121f75bd60cecfc4866d1cd6", "/sound3/random/glass3.ogg");
@@ -894,6 +896,7 @@ public class ResourceFixer
 		downloadResource("https://resources.download.minecraft.net/22/22a491f266f5c3cdd6e669a9493daaf40c9c8575", "/sound3/random/splash.ogg");
 		downloadResource("https://resources.download.minecraft.net/e9/e9833a1512b57bcf88ac4fdcc8df4e5a7e9d701d", "/sound3/random/successful_hit.ogg");
 		downloadResource("https://resources.download.minecraft.net/b2/b210a3c371441b77fe873133b2cb7b63e367b2f3", "/sound3/random/wood_click.ogg");
+		downloadResource("https://resources.download.minecraft.net/b2/b210a3c371441b77fe873133b2cb7b63e367b2f3", "/sound3/random/wood click.ogg");
 		//END random
 		
 		//step
@@ -978,6 +981,15 @@ public class ResourceFixer
 	{
 		String filePath = ModConstants.resourcesDir + file;
 		
+		if (url.contains("minecraft.net"))
+		{
+			dlSource = "Mojang";
+		}
+		else
+		{
+			dlSource = "Jonathing's Dropbox";
+		}
+		
 		BufferedInputStream bufferedIS = null;
 	    FileOutputStream fileOS = null;
 	    try {
@@ -992,9 +1004,10 @@ public class ResourceFixer
 	      }
 	      else
 	      {
-	    	  ModConstants.LOG.warn("file " + newFile.toString() + " already exists.");
+	    	  ModConstants.LOG.info("Resource " + file + " already exists. No need to download.");
 	    	  return;
 	      }
+	      ModConstants.LOG.info("Downloading resource " + file + " from " + dlSource + "...");
 	      URL urlObj = new URL(url);
 	      bufferedIS = new BufferedInputStream(urlObj.openStream());
 	      fileOS = new FileOutputStream(filePath);
@@ -1004,25 +1017,44 @@ public class ResourceFixer
 	        fileOS.write(data);
 	        data = bufferedIS.read();
 	      }
-	    } catch (MalformedURLException e) {
+	      //ModConstants.LOG.info("Resource " + file + " downloaded successfully.");
+	    }
+	    catch (MalformedURLException e)
+	    {
+	      ModConstants.LOG.error("Unable to download resource " + file);
 	      e.printStackTrace();
-	    } catch (IOException e) {
+	    }
+	    catch (IOException e)
+	    {
+	      ModConstants.LOG.error("Unable to download resource " + file);
 	      e.printStackTrace();
-	    }finally{
-	      try {
-	        if(fileOS != null){
+	    }
+	    finally
+	    {
+	      try
+	      {
+	        if(fileOS != null)
+	        {
 	          fileOS.close();
 	        }
-	      } catch (IOException e) {
+	      }
+	      catch (IOException e)
+	      {
+	    	ModConstants.LOG.error("Unable to download resource " + file);
 	        e.printStackTrace();
 	      }
 	      try {
-	        if(bufferedIS != null){
+	        if(bufferedIS != null)
+	        {
 	          bufferedIS.close();
 	        }
-	      } catch (IOException e) {
+	      }
+	      catch (IOException e)
+	      {
+	    	ModConstants.LOG.error("Unable to download resource " + file);
 	        e.printStackTrace();
 	      }
 	    }
+	    
 	}
 }

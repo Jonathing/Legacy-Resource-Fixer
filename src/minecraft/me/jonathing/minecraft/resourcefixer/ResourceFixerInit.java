@@ -21,7 +21,10 @@ public class ResourceFixerInit
 		// Identify resources folder
 		ModConstants.LOG.warn("Resources directory is " + ModConstants.resourcesDir);
 		
-		// Download resources
+		// Run ResourceFixer
+		ModConstants.LOG.info("Legacy Resource Fixer starting...");
+		ModConstants.LOG.warn("If you do not have any resources installed, this will take a while.");
+		long startTime = System.currentTimeMillis();
 		ResourceFixer.music();
 		ResourceFixer.newmusic();
 		ResourceFixer.newsound();
@@ -29,23 +32,20 @@ public class ResourceFixerInit
 		ResourceFixer.sound();
 		ResourceFixer.soundThree();
 		ResourceFixer.streaming();
-		ModConstants.LOG.error("BREAKPOINT!!!");
-		ModConstants.LOG.error("BREAKPOINT!!!");
+		long stopTime = System.currentTimeMillis();
+		long elapsedTime = stopTime - startTime;
+		ModConstants.LOG.info("Legacy Resource Fixer finished. Took " + elapsedTime + "ms.");
 	}
 	
-	/*
 	@Init
 	public void load(FMLInitializationEvent event)
 	{
-		ModConstants.LOG.info("Legacy Resource Fixer initialized.");
-		ModConstants.LOG.warn("Resources directory is " + ModConstants.resourcesDir);
+		
 	}
 	
 	@PostInit
 	public void postInit(FMLPostInitializationEvent event)
 	{
-		ModConstants.LOG.info("Legacy Resource Fixer post-initialized.");
-		ModConstants.LOG.warn("Resources directory is " + ModConstants.resourcesDir);
+		
 	}
-	*/
 }
