@@ -37,6 +37,7 @@ public class ResourceFixerInit
 		ModConstants.LOG.info("Legacy Resource Fixer finished. Took " + elapsedTime + "ms.");
 	}
 	
+	/*
 	@Init
 	public void load(FMLInitializationEvent event)
 	{
@@ -48,4 +49,5 @@ public class ResourceFixerInit
 	{
 		
 	}
+	*/
 }
