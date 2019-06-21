@@ -24,11 +24,11 @@ public class ResourceFixerInit
 		// Download resources
 		ResourceFixer.music();
 		ResourceFixer.newmusic();
-		//ResourceFixer.newsound();
-		//ResourceFixer.pe();
-		//ResourceFixer.sound();
+		ResourceFixer.newsound();
+		ResourceFixer.pe();
+		ResourceFixer.sound();
 		//ResourceFixer.soundThree();
-		//ResourceFixer.streaming();
+		ResourceFixer.streaming();
 		ModConstants.LOG.error("BREAKPOINT!!!");
 		ModConstants.LOG.error("BREAKPOINT!!!");
 	}
