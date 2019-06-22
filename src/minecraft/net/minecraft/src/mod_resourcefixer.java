@@ -1,15 +1,56 @@
-package me.jonathing.minecraft.resourcefixer;
+package net.minecraft.src;
 
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.logging.Logger;
 
-public class ResourceFixer
+import cpw.mods.fml.client.FMLClientHandler;
+import cpw.mods.fml.common.ModContainer;
+import net.minecraft.src.ModLoader;
+
+public class mod_resourcefixer extends BaseMod
 {
-	private static String dlSource;
+	public static final String NAME = "Legacy Resource Fixer";
+	//public static final String devVersion = "";
+    public static final String majorVersion = "1";
+    public static final String minorVersion = "1";
+    public static final String patchVersion = "1";
+    public static final String VERSION_ID = /*devVersion + */majorVersion + "." + minorVersion + "." + patchVersion;
+    public static final String MODID = "resourcefixer";
+    public static final String resourcesDir = System.getProperty("user.dir") + File.separator + "resources";
+	public static final Logger LOG = ModLoader.getLogger();
+	
+	@Override
+	public String getVersion()
+	{
+		return VERSION_ID;
+	}
+
+	@Override
+	public void load()
+	{
+		// Run ResourceFixer
+		LOG.info("[resourcefixer] Legacy Resource Fixer starting...");
+		LOG.warning("[resourcefixer] If you do not have any resources installed, this will take a while.");
+		long startTime = System.currentTimeMillis();
+		music();
+		newmusic();
+		newsound();
+		pe();
+		sound();
+		soundThree();
+		streaming();
+		pack();
+		long stopTime = System.currentTimeMillis();
+		long elapsedTime = stopTime - startTime;
+		LOG.info("[resourcefixer] Legacy Resource Fixer finished. Took " + elapsedTime + "ms.");
+		LOG.severe("[resourcefixer] Although all resources have been downloaded or found, the game has trouble loading sounds for the slime mob.");
+		LOG.severe("[resourcefixer] I don't know how to fix this. If you think you do, please go to the CurseForge page and DM me.");
+	}
+	
+private static String dlSource;
 	
 	public static void music()
 	{
@@ -74,7 +115,7 @@ public class ResourceFixer
 		
 		//fire
 		downloadResource("https://resources.download.minecraft.net/8b/8b260108a73470c16cd244325242d4780cfb7d78", "/newsound/fire/fire.ogg");
-		downloadResource("https://resources.download.minecraft.net/a0/a0d1fbff7e938e92c10c1576339dda668f40e111", "/newsound/fire/ignite.ogg");
+		downloadResource("https://www.dropbox.com/s/dp3x7q5mkt5dyly/ignite.ogg?dl=1", "/newsound/fire/ignite.ogg");
 		//END fire
 		
 		//liquid
@@ -972,6 +1013,11 @@ public class ResourceFixer
 		downloadResource("https://www.dropbox.com/s/0nfqajy6u86xnfr/where%20are%20we%20now.mus?dl=1", "/streaming/where are we now.mus");
 	}
 	
+	public static void pack()
+	{
+		downloadResource("https://www.dropbox.com/s/e8ui6fp6sgcfavh/pack.mcmeta?dl=1", "/pack.mcmeta");
+	}
+	
 	/**
 	 * Method used to download a file using Java I/O library.
 	 * @author Lalit Bhagtani from Code Destine
@@ -980,7 +1026,7 @@ public class ResourceFixer
 	 */
 	public static void downloadResource(String url, String file)
 	{
-		String filePath = ModConstants.resourcesDir + file;
+		String filePath = resourcesDir + file;
 		
 		if (url.contains("minecraft.net"))
 		{
@@ -1005,10 +1051,10 @@ public class ResourceFixer
 	      }
 	      else
 	      {
-	    	  ModConstants.LOG.info("Resource " + file + " already exists. No need to download.");
+	    	  LOG.info("[resourcefixer] Resource " + file + " already exists. No need to download.");
 	    	  return;
 	      }
-	      ModConstants.LOG.info("Downloading resource " + file + " from " + dlSource + "...");
+	      LOG.info("[resourcefixer] Downloading resource " + file + " from " + dlSource + "...");
 	      URL urlObj = new URL(url);
 	      bufferedIS = new BufferedInputStream(urlObj.openStream());
 	      fileOS = new FileOutputStream(filePath);
@@ -1018,16 +1064,16 @@ public class ResourceFixer
 	        fileOS.write(data);
 	        data = bufferedIS.read();
 	      }
-	      //ModConstants.LOG.info("Resource " + file + " downloaded successfully.");
+	      //LOG.info("Resource " + file + " downloaded successfully.");
 	    }
 	    catch (MalformedURLException e)
 	    {
-	      ModConstants.LOG.error("Unable to download resource " + file);
+	      LOG.severe("Unable to download resource " + file);
 	      e.printStackTrace();
 	    }
 	    catch (IOException e)
 	    {
-	      ModConstants.LOG.error("Unable to download resource " + file);
+	      LOG.severe("Unable to download resource " + file);
 	      e.printStackTrace();
 	    }
 	    finally
@@ -1041,7 +1087,7 @@ public class ResourceFixer
 	      }
 	      catch (IOException e)
 	      {
-	    	ModConstants.LOG.error("Unable to download resource " + file);
+	    	LOG.severe("Unable to download resource " + file);
 	        e.printStackTrace();
 	      }
 	      try {
@@ -1052,10 +1098,34 @@ public class ResourceFixer
 	      }
 	      catch (IOException e)
 	      {
-	    	ModConstants.LOG.error("Unable to download resource " + file);
+	    	LOG.severe("Unable to download resource " + file);
 	        e.printStackTrace();
 	      }
 	    }
 	    
 	}
+	
+	/*
+	public class ModLogger {
+	    private String loggerName;
+	    private Logger logInstance;
+
+	    ModLogger(final String loggerName) {
+	        this.loggerName = loggerName;
+	        this.logInstance = ModLoader.getLogger();
+	    }
+
+	    public void error(final String logMessage, Object... logArguments) {
+	        logInstance.severe("[resourcefixer] " + String.format(logMessage, logArguments));
+	    }
+
+	    public void warn(final String logMessage, Object... logArguments) {
+	        logInstance.warning("[resourcefixer] " + String.format(logMessage, logArguments));
+	    }
+
+	    public void info(final String logMessage, Object... logArguments) {
+	        logInstance.info("[resourcefixer] " + String.format(logMessage, logArguments));
+	    }
+	}
+	*/
 }
