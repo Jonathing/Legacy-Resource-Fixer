@@ -5,3 +5,15 @@
 !/src
 !LICENSE
 !README.md
+/src/minecraft/net/minecraft/isom
+/src/minecraft/net/minecraft/client
+/src/minecraft_server
+/src/minecraft/argo
+/src/minecraft/cpw
+/src/minecraft/ibxm
+/src/minecraft/paulscode
+/src/minecraft/Start.java
+/src/minecraft/fmlversion.properties
+/src/minecraft/forge_logo.png
+/src/minecraft/gk.java
+/src/minecraft/mod_MinecraftForge.info
