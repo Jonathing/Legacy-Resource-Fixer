@@ -2,3 +2,6 @@
 
 !.gitignore
 !mod_resourcefixer.java
+!LRFProgress.java
+!LRFDummyProgress.java
+!ILRFDownloadDisplay.java

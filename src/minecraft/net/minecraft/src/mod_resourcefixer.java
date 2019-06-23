@@ -6,21 +6,32 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.logging.Logger;
 
+import javax.swing.JDialog;
+
+import java.lang.Math;
+
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.common.ModContainer;
 import net.minecraft.src.ModLoader;
+
+import net.minecraft.src.LRFProgress;
 
 public class mod_resourcefixer extends BaseMod
 {
 	public static final String NAME = "Legacy Resource Fixer";
 	//public static final String devVersion = "";
     public static final String majorVersion = "1";
-    public static final String minorVersion = "1";
-    public static final String patchVersion = "1";
+    public static final String minorVersion = "2";
+    public static final String patchVersion = "0";
     public static final String VERSION_ID = /*devVersion + */majorVersion + "." + minorVersion + "." + patchVersion;
     public static final String MODID = "resourcefixer";
     public static final String resourcesDir = System.getProperty("user.dir") + File.separator + "resources";
 	public static final Logger LOG = ModLoader.getLogger();
+	
+	JDialog popupWindow;
+	static ILRFDownloadDisplay downloadMonitor;
+	
+	static int progressPerc;
 	
 	@Override
 	public String getVersion()
@@ -34,6 +45,9 @@ public class mod_resourcefixer extends BaseMod
 		// Run ResourceFixer
 		LOG.info("[resourcefixer] Legacy Resource Fixer starting...");
 		LOG.warning("[resourcefixer] If you do not have any resources installed, this will take a while.");
+		progressPerc = 0;
+		showWindow(true);
+		downloadMonitor.updateProgress(progressPerc/746);
 		long startTime = System.currentTimeMillis();
 		music();
 		newmusic();
@@ -43,14 +57,47 @@ public class mod_resourcefixer extends BaseMod
 		soundThree();
 		streaming();
 		pack();
+		downloadMonitor.updateProgress(100);
 		long stopTime = System.currentTimeMillis();
 		long elapsedTime = stopTime - startTime;
+		popupWindow.setVisible(false);
 		LOG.info("[resourcefixer] Legacy Resource Fixer finished. Took " + elapsedTime + "ms.");
 		LOG.severe("[resourcefixer] Although all resources have been downloaded or found, the game has trouble loading sounds for the slime mob.");
 		LOG.severe("[resourcefixer] I don't know how to fix this. If you think you do, please go to the CurseForge page and DM me.");
 	}
 	
-private static String dlSource;
+	private void showWindow(boolean showIt)
+	{
+		if (downloadMonitor != null) { return; }
+		try
+		{
+			if (showIt)
+			{
+				downloadMonitor = new LRFProgress();
+				popupWindow = (JDialog) downloadMonitor.makeDialog();
+			}
+			else
+			{
+				downloadMonitor = new LRFDummyProgress();
+			}
+		}
+		catch (Throwable e)
+		{
+			if (downloadMonitor == null)
+			{
+				downloadMonitor = new LRFDummyProgress();
+				LOG.severe("[resourcefixer] Unable to show progress window.");
+				e.printStackTrace();
+			}
+			else
+			{
+				downloadMonitor.makeHeadless();
+			}
+			popupWindow = null;
+		}
+	}
+	
+	private static String dlSource;
 	
 	public static void music()
 	{
@@ -1051,20 +1098,25 @@ private static String dlSource;
 	      }
 	      else
 	      {
-	    	  LOG.info("[resourcefixer] Resource " + file + " already exists. No need to download.");
+	    	  downloadMonitor.updateProgressString("/resources" + file + " already exists.");
+		      progressPerc = progressPerc + 1;
+		      downloadMonitor.updateProgress((int) (((double) progressPerc/ (double) 747) * 100));
 	    	  return;
 	      }
-	      LOG.info("[resourcefixer] Downloading resource " + file + " from " + dlSource + "...");
+	      downloadMonitor.updateProgressString("Downloading /resources" + file + "...");
 	      URL urlObj = new URL(url);
 	      bufferedIS = new BufferedInputStream(urlObj.openStream());
 	      fileOS = new FileOutputStream(filePath);
 
 	      int data = bufferedIS.read();
-	      while(data != -1){
+	      while(data != -1)
+	      {
 	        fileOS.write(data);
 	        data = bufferedIS.read();
 	      }
 	      //LOG.info("Resource " + file + " downloaded successfully.");
+	      progressPerc = progressPerc + 1;
+	      downloadMonitor.updateProgress((int) (((double) progressPerc/ (double) 747) * 100));
 	    }
 	    catch (MalformedURLException e)
 	    {
