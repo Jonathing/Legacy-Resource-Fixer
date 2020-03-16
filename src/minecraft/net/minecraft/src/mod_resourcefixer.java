@@ -363,11 +363,11 @@ public class mod_resourcefixer extends BaseMod
 		downloadResource("https://www.dropbox.com/s/dh0dkj5tfytlo7k/skeletonhurt2.ogg?dl=1", "/newsound/mob/skeletonhurt2.ogg");
 		downloadResource("https://www.dropbox.com/s/2o5cmg9hfazbak1/skeletonhurt3.ogg?dl=1", "/newsound/mob/skeletonhurt3.ogg");
 		downloadResource("https://www.dropbox.com/s/wryfu35tr7ho54w/skeletonhurt4.ogg?dl=1", "/newsound/mob/skeletonhurt4.ogg");
-		downloadResource("https://resources.download.minecraft.net/5c/5cde2500773323f7997d75062f8a26afcdf62b2e", "/newsound/mob/slime1.ogg");
-		downloadResource("https://resources.download.minecraft.net/5e/5e2ef521293719bbe22bbb515bbcacf4c233a075", "/newsound/mob/slime2.ogg");
-		downloadResource("https://resources.download.minecraft.net/3b/3bc8225914b1be20db68fcdae202d5acee3234c2", "/newsound/mob/slime3.ogg");
-		downloadResource("https://resources.download.minecraft.net/4d/4dfe0b607c5de2e47f3b7950c56bbebbf3115957", "/newsound/mob/slime4.ogg");
-		downloadResource("https://resources.download.minecraft.net/35/35f0b3c9c462a6c21ec213fbda2437a0e6427883", "/newsound/mob/slime5.ogg");
+		downloadResource("https://resources.download.minecraft.net/d4/d49ab3ceb3f6212d64580f0d906fa9880a674c6d", "/newsound/mob/slime1.ogg");
+		downloadResource("https://resources.download.minecraft.net/52/525700bc06b6f0f8afc3fb542977cef617196ccf", "/newsound/mob/slime2.ogg");
+		downloadResource("https://resources.download.minecraft.net/08/087e5fa84e7c961778397a0d938bde1e49dd3beb", "/newsound/mob/slime3.ogg");
+		downloadResource("https://resources.download.minecraft.net/ca/ca1b7de8bb9ce92f2f044c6a98c99d7bf92b7184", "/newsound/mob/slime4.ogg");
+		downloadResource("https://resources.download.minecraft.net/24/24bae598320bf757fd6937a93f135f5cdba206ba", "/newsound/mob/slime5.ogg");
 		downloadResource("https://resources.download.minecraft.net/07/075e1ea92d5564d7bdf267ae975044315a41a686", "/newsound/mob/slimeattack1.ogg");
 		downloadResource("https://resources.download.minecraft.net/f6/f6e2067571631aae206000a501c9adebe862e32a", "/newsound/mob/slimeattack2.ogg");
 		downloadResource("https://resources.download.minecraft.net/65/65b49739d48ebc47879ca5528c8283329980b304", "/newsound/mob/spider1.ogg");
