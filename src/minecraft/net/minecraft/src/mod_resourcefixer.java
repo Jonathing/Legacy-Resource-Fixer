@@ -37,7 +37,7 @@ public class mod_resourcefixer extends BaseMod
 
     public void load()
     {
-        LOG.info("[resourcefixer] Legacy Resource Fixer successfully loaded.");
+        LOG.info("[resourcefixer] Legacy Resource Fixer successfully loaded. Written by Jonathing.");
 //        LOG.warning("[resourcefixer] If you do not have any resources installed, this will take a while.");
         progressPerc = 0;
         this.showWindow(true);
@@ -63,11 +63,11 @@ public class mod_resourcefixer extends BaseMod
         long stopTime = System.currentTimeMillis();
         long elapsedTime = stopTime - startTime;
         this.popupWindow.setVisible(false);
-        LOG.info("[resourcefixer] Legacy Resource Fixer finished. Took " + elapsedTime + "ms.");
+        LOG.info("[resourcefixer] Legacy Resource Fixer finished checking resources. Took " + elapsedTime + "ms.");
         
         if (missingCount > 0)
         {
-        	if (missingCount == downloadCount)
+        	if (missingCount != downloadCount)
         	{
         		LOG.info("[resourcefixer] " + missingCount + " resources were missing, and " + downloadCount + " of them were successfully reacquired.");
         	}
