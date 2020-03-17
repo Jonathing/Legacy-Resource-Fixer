@@ -1,20 +1,20 @@
 package net.minecraft.src;
 
 import java.awt.Component;
-import java.awt.Dialog.ModalityType;
 import java.awt.Dimension;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-
-import javax.swing.AbstractButton;
+import java.awt.Window;
+import java.awt.Dialog.ModalityType;
 import javax.swing.Box;
 import javax.swing.JDialog;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JProgressBar;
+
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class LRFProgress extends JOptionPane implements ILRFDownloadDisplay
 {
@@ -23,116 +23,138 @@ public class LRFProgress extends JOptionPane implements ILRFDownloadDisplay
     private JProgressBar progress;
     boolean stopIt = false;
     Thread pokeThread;
+    
+    public LRFProgress()
+    {
+    }
 
-	private Box makeProgressPanel()
-	{
-		Box box = Box.createVerticalBox();
-		//box.add(Box.createRigidArea(new Dimension(0,0)));
-		JLabel welcomeLabel = new JLabel("<html><b><font size='+1'>Fixing your resources...</font></b></html>");
-		box.add(welcomeLabel);
-		welcomeLabel.setAlignmentY(LEFT_ALIGNMENT);
-		welcomeLabel = new JLabel("<html>Please wait while Legacy Resource Fixer downloads Minecraft's resources...</html>");
-		welcomeLabel.setAlignmentY(LEFT_ALIGNMENT);
-		box.add(welcomeLabel);
-		box.add(Box.createRigidArea(new Dimension(0,10)));
-		currentActivity = new JLabel("...");
-		box.add(currentActivity);
-		box.add(Box.createRigidArea(new Dimension(0,20)));
-		progress = new JProgressBar(0, 100);
-		progress.setStringPainted(true);
-		box.add(progress);
-		return box;
-	}
+    private Box makeProgressPanel()
+    {
+        Box box = Box.createVerticalBox();
+        JLabel welcomeLabel = new JLabel("<html><b><font size='+1'>Fixing your resources...</font></b></html>");
+        box.add(welcomeLabel);
+        welcomeLabel.setAlignmentY(0.0F);
+        welcomeLabel = new JLabel("<html>Please wait while Legacy Resource Fixer downloads Minecraft's resources...</html>");
+        welcomeLabel.setAlignmentY(0.0F);
+        box.add(welcomeLabel);
+        box.add(Box.createRigidArea(new Dimension(0, 10)));
+        this.currentActivity = new JLabel("...");
+        box.add(this.currentActivity);
+        box.add(Box.createRigidArea(new Dimension(0, 20)));
+        this.progress = new JProgressBar(0, 100);
+        this.progress.setStringPainted(true);
+        box.add(this.progress);
+        return box;
+    }
 
-	public JDialog makeDialog()
-	{
-		setMessageType(JOptionPane.INFORMATION_MESSAGE);
-		setMessage(makeProgressPanel());
-        setOptions(new Object[] {});
-        addPropertyChangeListener(new PropertyChangeListener()
+    public JDialog makeDialog()
+    {
+        this.setMessageType(1);
+        this.setMessage(this.makeProgressPanel());
+        this.setOptions(new Object[0]);
+        this.addPropertyChangeListener(new PropertyChangeListener()
         {
-            @Override
-            public void propertyChange(PropertyChangeEvent evt)
-            {
-            	// DO NOTHING
-            	/*
-                if (evt.getSource() == LRFProgress.this && evt.getPropertyName()==VALUE_PROPERTY)
-                {
-                    requestClose("Are you sure you want to cancel Legacy Resource Fixer?");
-                }
-                */
-            }
+//        	LRFProgressBar(LRFProgress progress)
+//        	{
+//        		this.progress = progress;
+//        	}
+        	
+    		@Override
+        	public void propertyChange(PropertyChangeEvent evt)
+        	{
+        		
+        	}
+        	
         });
-		container = new JDialog(null, "Legacy Resource Fixer", ModalityType.MODELESS);
-		container.setResizable(false);
-		container.setLocationRelativeTo(null);
-		container.add(this);
-		this.updateUI();
-		container.pack();
-		container.setMinimumSize(container.getPreferredSize());
-		container.setVisible(true);
-		container.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
-		container.addWindowListener(new WindowAdapter()
-		{
-			@Override
-			public void windowClosing(WindowEvent e)
-			{
-				requestClose("Are you sure you want to cancel Legacy Resource Fixer?");
-			}
-		});
-		return container;
-	}
+        this.container = new JDialog((Window)null, "Legacy Resource Fixer", ModalityType.MODELESS);
+        this.container.setResizable(false);
+        this.container.setLocationRelativeTo((Component)null);
+        this.container.add(this);
+        this.updateUI();
+        this.container.pack();
+        this.container.setMinimumSize(this.container.getPreferredSize());
+        this.container.setVisible(true);
+        this.container.setDefaultCloseOperation(0);
+        this.container.addWindowListener(new WindowAdapter()
+        {
+        	public void windowClosing(WindowEvent e)
+        	{
+        		requestClose("Are you sure you want to cancel Legacy Resource Fixer?");
+        	}
+        });
+        return this.container;
+    }
 
-	protected void requestClose(String message)
-	{
-		int shouldClose = JOptionPane.showConfirmDialog(container, message, "Are you sure you want to cancel?", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
-		if (shouldClose == JOptionPane.YES_OPTION)
-		{
-			container.dispose();
-		}
-		stopIt = true;
-	}
+    protected void requestClose(String message)
+    {
+        int shouldClose = JOptionPane.showConfirmDialog(this.container, message, "Are you sure you want to cancel?", 0, 2);
+        if (shouldClose == 0) {
+            this.container.dispose();
+        }
 
-	public void updateProgressString(String progressUpdate, Object... data)
-	{
-		if (currentActivity!=null)
-		{
-			currentActivity.setText(String.format(progressUpdate,data));
-		}
-	}
+        this.stopIt = true;
+    }
 
-	public void resetProgress(int sizeGuess)
-	{
-		if (progress!=null)
-		{
-			progress.getModel().setRangeProperties(0, 0, 0, sizeGuess, false);
-		}
-	}
+    public void updateProgressString(String progressUpdate, Object... data)
+    {
+        if (this.currentActivity != null)
+        {
+            this.currentActivity.setText(String.format(progressUpdate, data));
+        }
 
-	public void updateProgress(int fullLength)
-	{
-		if (progress!=null)
-		{
-			progress.getModel().setValue(fullLength);
-		}
-	}
+    }
 
-	public void makeHeadless()
-	{
-		container = null;
-		progress = null;
-		currentActivity = null;
-	}
+    public void resetProgress(int sizeGuess)
+    {
+        if (this.progress != null)
+        {
+            this.progress.getModel().setRangeProperties(0, 0, 0, sizeGuess, false);
+        }
 
-	@Override
-	public void setPokeThread(Thread currentThread)
-	{
-		this.pokeThread = currentThread;
-	}
+    }
 
-	@Override
-	public boolean shouldStopIt()
-	{
-		return stopIt;
-	}
+    public void updateProgress(int fullLength)
+    {
+        if (this.progress != null)
+        {
+            this.progress.getModel().setValue(fullLength);
+        }
+
+    }
+
+    public void makeHeadless()
+    {
+        this.container = null;
+        this.progress = null;
+        this.currentActivity = null;
+    }
+
+    public void setPokeThread(Thread currentThread)
+    {
+        this.pokeThread = currentThread;
+    }
+
+    public boolean shouldStopIt()
+    {
+        return this.stopIt;
+    }
+    
+//    class LRFProgressBar implements PropertyChangeListener
+//    {
+//		
+//    }
+    
+//    class LRFProgressWindow extends WindowAdapter
+//    {
+//    	LRFProgressWindow(LRFProgress progress)
+//    	{
+//    		this.progress = progress;
+//    	}
+//    	
+//    	public void windowClosing(WindowEvent e)
+//    	{
+//    		this.progress.requestClose("Are you sure you want to cancel Legacy Resource Fixer?");
+//    	}
+//    }
+    
 }

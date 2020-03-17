@@ -1,7 +1,5 @@
 package net.minecraft.src;
 
-import javax.swing.JDialog;
-
 public interface ILRFDownloadDisplay
 {
     void resetProgress(int sizeGuess);
@@ -12,7 +10,7 @@ public interface ILRFDownloadDisplay
 
     boolean shouldStopIt();
 
-    void updateProgressString(String string, Object ... data);
+    void updateProgressString(String string, Object... data);
 
     Object makeDialog();
 

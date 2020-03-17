@@ -2,47 +2,37 @@ package net.minecraft.src;
 
 public class LRFDummyProgress implements ILRFDownloadDisplay
 {
+    public LRFDummyProgress()
+    {
+    }
 
-	@Override
-	public void resetProgress(int sizeGuess) {
-		// TODO Auto-generated method stub
-		
-	}
+    public void resetProgress(int sizeGuess)
+    {
+    }
 
-	@Override
-	public void setPokeThread(Thread currentThread) {
-		// TODO Auto-generated method stub
-		
-	}
+    public void setPokeThread(Thread currentThread)
+    {
+    }
 
-	@Override
-	public void updateProgress(int fullLength) {
-		// TODO Auto-generated method stub
-		
-	}
+    public void updateProgress(int fullLength)
+    {
+    }
 
-	@Override
-	public boolean shouldStopIt() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+    public boolean shouldStopIt()
+    {
+        return false;
+    }
 
-	@Override
-	public void updateProgressString(String string, Object... data) {
-		// TODO Auto-generated method stub
-		
-	}
+    public void updateProgressString(String string, Object... data)
+    {
+    }
 
-	@Override
-	public Object makeDialog() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    public Object makeDialog()
+    {
+        return null;
+    }
 
-	@Override
-	public void makeHeadless() {
-		// TODO Auto-generated method stub
-		
-	}
-
+    public void makeHeadless()
+    {
+    }
 }
