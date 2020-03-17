@@ -25,17 +25,14 @@ public class mod_resourcefixer extends BaseMod
     static int missingCount;
     static int downloadCount;
     private static String dlSource;
+    
+	public String Version()
+	{
+		// TODO Auto-generated method stub
+		return "1.3.0";
+	}
 
     public mod_resourcefixer()
-    {
-    }
-
-    public String getVersion()
-    {
-        return "1.3.0";
-    }
-
-    public void load()
     {
         LOG.info("[resourcefixer] Legacy Resource Fixer successfully loaded. Written by Jonathing.");
 //        LOG.warning("[resourcefixer] If you do not have any resources installed, this will take a while.");
@@ -976,4 +973,6 @@ public class mod_resourcefixer extends BaseMod
         resourcesDir = System.getProperty("user.dir") + File.separator + "resources";
         LOG = ModLoader.getLogger();
     }
+
+	
 }
