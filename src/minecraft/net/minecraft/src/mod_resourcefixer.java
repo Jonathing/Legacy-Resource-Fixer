@@ -12,10 +12,10 @@ import javax.swing.JDialog;
 public class mod_resourcefixer extends BaseMod
 {
     public static final String NAME = "Legacy Resource Fixer";
-    public static final String majorVersion = "1";
-    public static final String minorVersion = "3";
+    public static final String majorVersion = "2";
+    public static final String minorVersion = "0";
     public static final String patchVersion = "0";
-    public static final String VERSION_ID = "1.3.0";
+    public static final String VERSION_ID = "2.0.0";
     public static final String MODID = "resourcefixer";
     public static final String resourcesDir;
     public static final Logger LOG;
@@ -29,7 +29,7 @@ public class mod_resourcefixer extends BaseMod
 	public String Version()
 	{
 		// TODO Auto-generated method stub
-		return "1.3.0";
+		return "2.0.0";
 	}
 
     public mod_resourcefixer()
