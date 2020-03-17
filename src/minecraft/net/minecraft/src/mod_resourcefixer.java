@@ -22,6 +22,8 @@ public class mod_resourcefixer extends BaseMod
     JDialog popupWindow;
     static ILRFDownloadDisplay downloadMonitor;
     static int progressPerc;
+    static int missingCount;
+    static int downloadCount;
     private static String dlSource;
 
     public mod_resourcefixer()
@@ -35,24 +37,50 @@ public class mod_resourcefixer extends BaseMod
 
     public void load()
     {
-        LOG.info("[resourcefixer] Legacy Resource Fixer starting...");
-        LOG.warning("[resourcefixer] If you do not have any resources installed, this will take a while.");
+        LOG.info("[resourcefixer] Legacy Resource Fixer successfully loaded.");
+//        LOG.warning("[resourcefixer] If you do not have any resources installed, this will take a while.");
         progressPerc = 0;
         this.showWindow(true);
         downloadMonitor.updateProgress(progressPerc / 746);
         long startTime = System.currentTimeMillis();
+        
+        LOG.info("[resourcefixer] Checking music files...");
         music();
         newmusic();
+        
+        LOG.info("[resourcefixer] Checking sound files...");
         newsound();
         sound();
         soundThree();
+        
+        LOG.info("[resourcefixer] Checking music disk files...");
         streaming();
+        
+        LOG.info("[resourcefixer] Checking miscellaneous resources...");
         misc();
+        
         downloadMonitor.updateProgress(100);
         long stopTime = System.currentTimeMillis();
         long elapsedTime = stopTime - startTime;
         this.popupWindow.setVisible(false);
         LOG.info("[resourcefixer] Legacy Resource Fixer finished. Took " + elapsedTime + "ms.");
+        
+        if (missingCount > 0)
+        {
+        	if (missingCount == downloadCount)
+        	{
+        		LOG.info("[resourcefixer] " + missingCount + " resources were missing, and " + downloadCount + " of them were successfully reacquired.");
+        	}
+        	else
+        	{
+        		LOG.info("[resourcefixer] All " + missingCount + " missing resources were successfully reacquired.");
+        	}
+        }
+        else
+        {
+        	LOG.info("[resourcefixer] No missing resources were found.");
+        }
+        
 //        LOG.severe("[resourcefixer] Although all resources have been downloaded or found, the game has trouble loading sounds for the slime mob.");
 //        LOG.severe("[resourcefixer] I don't know how to fix this. If you think you do, please go to the CurseForge page and DM me.");
     }
@@ -882,7 +910,7 @@ public class mod_resourcefixer extends BaseMod
             File newFile = new File(filePath);
             if (newFile.exists())
             {
-                downloadMonitor.updateProgressString("/resources" + file + " already exists.", new Object[0]);
+                downloadMonitor.updateProgressString("/resources" + file + " found.", new Object[0]);
                 ++progressPerc;
                 downloadMonitor.updateProgress((int)((double)progressPerc / 747.0D * 100.0D));
                 return;
@@ -895,6 +923,9 @@ public class mod_resourcefixer extends BaseMod
 
             newFile.createNewFile();
             downloadMonitor.updateProgressString("Downloading /resources" + file + "...", new Object[0]);
+            LOG.info("[resourcefixer] Downloading /resources" + file + " from " + dlSource + "...");
+            ++missingCount;
+            ++progressPerc; //moved in case download fails, the progress bar doesn't look lower than it should.
             URL urlObj = new URL(url);
             bufferedIS = new BufferedInputStream(urlObj.openStream());
             fileOS = new FileOutputStream(filePath);
@@ -904,7 +935,7 @@ public class mod_resourcefixer extends BaseMod
                 fileOS.write(data);
             }
 
-            ++progressPerc;
+            ++downloadCount;
             downloadMonitor.updateProgress((int)((double)progressPerc / 747.0D * 100.0D));
         } catch (MalformedURLException e)
         {
