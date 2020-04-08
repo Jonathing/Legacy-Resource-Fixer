@@ -355,7 +355,7 @@ public class mod_resourcefixer extends BaseMod
         downloadResource("https://resources.download.minecraft.net/9a/9a20be18fed05330f745a54eb8aeba11aac5403b", "/newsound/portal/portal.ogg");
         downloadResource("https://resources.download.minecraft.net/43/43388701fac432a567fe9fec421521e6348ad780", "/newsound/portal/travel.ogg");
         downloadResource("https://resources.download.minecraft.net/30/301f32642b654addbd06a430768fead464fd24c4", "/newsound/portal/trigger.ogg");
-        downloadResource("https://gitlab.com/Jonathing/resource-fixer/-/raw/beta/beta-sounds/bow.ogg", "/newsound/random/bow.ogg");
+        downloadResource("https://gitlab.com/Jonathing/assets/-/raw/assets/minecraft/beta-sounds/bow.ogg", "/newsound/random/bow.ogg");
         downloadResource("https://resources.download.minecraft.net/78/78f034d58779fb4d22b00ea249015a0dbf4e7b3f", "/newsound/random/bowhit1.ogg");
         downloadResource("https://resources.download.minecraft.net/c3/c3cd0db760c980287b26ef9c0894f66c4250724e", "/newsound/random/bowhit2.ogg");
         downloadResource("https://resources.download.minecraft.net/03/0369a1236a4b9ca219fd3ad7d19d0b5237510b1e", "/newsound/random/bowhit3.ogg");
@@ -363,20 +363,20 @@ public class mod_resourcefixer extends BaseMod
         downloadResource("https://resources.download.minecraft.net/8b/8bf3ecb0fe9a6a615f5995e3dd21b6c39adc21d5", "/newsound/random/break.ogg");
         downloadResource("https://resources.download.minecraft.net/dd/dd2f7209c2a58b0886beb34d49b0512b49adbb7e", "/newsound/random/breath.ogg");
         downloadResource("https://resources.download.minecraft.net/bd/bdc648e04933df8ddcccc84b375d6556776d4331", "/newsound/random/burp.ogg");
-        downloadResource("https://gitlab.com/Jonathing/resource-fixer/-/raw/beta/beta-sounds/close.ogg", "/newsound/random/chestclosed.ogg");
-        downloadResource("https://gitlab.com/Jonathing/resource-fixer/-/raw/beta/beta-sounds/open.ogg", "/newsound/random/chestopen.ogg");
+        downloadResource("https://gitlab.com/Jonathing/assets/-/raw/assets/minecraft/beta-sounds/close.ogg", "/newsound/random/chestclosed.ogg");
+        downloadResource("https://gitlab.com/Jonathing/assets/-/raw/assets/minecraft/beta-sounds/open.ogg", "/newsound/random/chestopen.ogg");
         downloadResource("https://resources.download.minecraft.net/2f/2fe092579d9637e2d160319820ee08e60a237bb7", "/newsound/random/click.ogg");
-        downloadResource("https://gitlab.com/Jonathing/resource-fixer/-/raw/beta/beta-sounds/close.ogg", "/newsound/random/door_close.ogg");
-        downloadResource("https://gitlab.com/Jonathing/resource-fixer/-/raw/beta/beta-sounds/open.ogg", "/newsound/random/door_open.ogg");
+        downloadResource("https://gitlab.com/Jonathing/assets/-/raw/assets/minecraft/beta-sounds/close.ogg", "/newsound/random/door_close.ogg");
+        downloadResource("https://gitlab.com/Jonathing/assets/-/raw/assets/minecraft/beta-sounds/open.ogg", "/newsound/random/door_open.ogg");
         downloadResource("https://resources.download.minecraft.net/85/857b75738992d25e338dee640ab191323bcbf798", "/newsound/random/drink.ogg");
         downloadResource("https://resources.download.minecraft.net/40/40a5a4307c1a2a5a1b9f71254275689845374104", "/newsound/random/drr.ogg");
         downloadResource("https://resources.download.minecraft.net/df/dfee39084c771182f6b9e7cfb8c8bc4e255747bc", "/newsound/random/eat1.ogg");
         downloadResource("https://resources.download.minecraft.net/d2/d26bde554d88f0ca156baf471c44ce2c0e68176c", "/newsound/random/eat2.ogg");
         downloadResource("https://resources.download.minecraft.net/9f/9f2c4bab5ed55f1714fffa223985c81babc8f6c0", "/newsound/random/eat3.ogg");
-        downloadResource("https://gitlab.com/Jonathing/resource-fixer/-/raw/beta/beta-sounds/explode.ogg", "/newsound/random/explode1.ogg");
-        downloadResource("https://gitlab.com/Jonathing/resource-fixer/-/raw/beta/beta-sounds/explode.ogg", "/newsound/random/explode2.ogg");
-        downloadResource("https://gitlab.com/Jonathing/resource-fixer/-/raw/beta/beta-sounds/explode.ogg", "/newsound/random/explode3.ogg");
-        downloadResource("https://gitlab.com/Jonathing/resource-fixer/-/raw/beta/beta-sounds/explode.ogg", "/newsound/random/explode4.ogg");
+        downloadResource("https://gitlab.com/Jonathing/assets/-/raw/assets/minecraft/beta-sounds/explode.ogg", "/newsound/random/explode1.ogg");
+        downloadResource("https://gitlab.com/Jonathing/assets/-/raw/assets/minecraft/beta-sounds/explode.ogg", "/newsound/random/explode2.ogg");
+        downloadResource("https://gitlab.com/Jonathing/assets/-/raw/assets/minecraft/beta-sounds/explode.ogg", "/newsound/random/explode3.ogg");
+        downloadResource("https://gitlab.com/Jonathing/assets/-/raw/assets/minecraft/beta-sounds/explode.ogg", "/newsound/random/explode4.ogg");
         downloadResource("https://resources.download.minecraft.net/c6/c649e60ea9a99c97501a50d2dc4e579343e91ea8", "/newsound/random/fizz.ogg");
         downloadResource("https://resources.download.minecraft.net/a9/a92ba2b8f6abc41aa8d679ad808a81d0aafa04b2", "/newsound/random/fuse.ogg");
         downloadResource("https://resources.download.minecraft.net/72/7274a2231ed4544a37e599b7b014e589e5377094", "/newsound/random/glass1.ogg");
@@ -896,7 +896,7 @@ public class mod_resourcefixer extends BaseMod
             dlSource = "Mojang";
         } else
         {
-            dlSource = "Jonathing's GitLab Repository";
+            dlSource = "Jonathing's Assets Repository";
         }
 
         BufferedInputStream bufferedIS = null;
